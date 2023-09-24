@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  scrollbar-width: 12px;
+  scrollbar-color: var(--secondary);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--paragraph);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-alt);
+}
+
+:root {
+  font-size: 62.5%;
+  /* --- COLORS --- */
+  --main-bg: #fffffe;
+  --bg-alt: #f2f4f6;
+
+  --headline: #00214d;
+  --paragraph: #1b2d45;
+
+  --highlight: #00ebc7;
+  --secondary: #ff5470;
+  --tertiary: #fde24f;
+
+  /* --- FONT SIZE --- */
+  --heading-lg: 3.2rem;
+  --heading-md: 2.4rem;
+  --heading-sm: 2rem;
+
+  --text-lg: 1.8rem;
+  --text-md: 1.6rem;
+  --text-sm: 1.4rem;
+}
+
+body {
+  font-size: var(--text-md);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6em;
+  color: var(--paragraph);
+
+  background-color: var(--main-bg);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body > * {
+  flex: 1 1 100vw;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.container {
+  padding-inline: 2rem;
+}
+
+/* HEADER */
+#header {
+  padding: 0 2rem;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+/* MAIN */
+main {
+  margin-block: 6rem;
+}
