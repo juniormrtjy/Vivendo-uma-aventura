@@ -47,7 +47,7 @@
 body {
   font-size: var(--text-md);
   font-family: 'Inter', sans-serif;
-  line-height: 1.6em;
+  line-height: 1.8;
   color: var(--paragraph);
 
   background-color: var(--main-bg);
@@ -58,6 +58,11 @@ body {
 
 body > * {
   flex: 1 1 100vw;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 li {
@@ -82,7 +87,12 @@ a {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-block: 1rem;
+}
+
+#logo {
+  width: 100px;
 }
 
 .menu {
@@ -93,4 +103,9 @@ nav {
 /* MAIN */
 main {
   margin-block: 6rem;
+}
+
+/* FOOTER */
+footer {
+  padding-block: 2rem;
 }
