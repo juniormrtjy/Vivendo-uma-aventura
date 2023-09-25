@@ -63,6 +63,7 @@ body > * {
 img {
   width: 100%;
   display: block;
+  border-radius: 0.5rem;
 }
 
 li {
@@ -74,13 +75,35 @@ a {
   display: inline-flex;
 }
 
+.section {
+  /* margin-block-end: 3rem; */
+  padding-block: 6rem;
+}
+
 .container {
   padding-inline: 2rem;
+}
+
+.container header {
+  margin-bottom: 3rem;
 }
 
 /* HEADER */
 #header {
   padding: 0 2rem;
+  margin-block-end: 3rem;
+}
+
+#header .img {
+  max-width: 500px;
+  border-radius: 0.5rem;
+  padding: 0.15rem;
+  margin-top: 2rem;
+
+  background: red;
+  background: linear-gradient(var(--highlight), var(--bg-alt));
+
+  overflow: hidden;
 }
 
 /* navigation */
@@ -100,9 +123,33 @@ nav {
   gap: 1rem;
 }
 
-/* MAIN */
-main {
-  margin-block: 6rem;
+/* INTRO */
+#intro {
+  background: var(--bg-alt);
+}
+
+.card {
+  padding: 2rem;
+  background: var(--main-bg);
+  margin-block-end: 2rem;
+}
+
+/* INVITE */
+#invite .link-form {
+  background: var(--secondary);
+  color: var(--bg-alt);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-block-start: 2rem;
+  transition: 0.2s;
+}
+
+#invite .link-form:nth-of-type(2) {
+  background: var(--headline);
+}
+
+#invite .link-form:hover {
+  opacity: 0.9;
 }
 
 /* FOOTER */
