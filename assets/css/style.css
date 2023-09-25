@@ -66,6 +66,10 @@ img {
   border-radius: 0.5rem;
 }
 
+article img {
+  margin-top: 2rem;
+}
+
 li {
   list-style: none;
 }
@@ -85,7 +89,7 @@ a {
 }
 
 .container header {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* HEADER */
@@ -128,7 +132,7 @@ nav {
   background: var(--bg-alt);
 }
 
-.card {
+#intro .card {
   padding: 2rem;
   background: var(--main-bg);
   margin-block-end: 2rem;
@@ -150,6 +154,36 @@ nav {
 
 #invite .link-form:hover {
   opacity: 0.9;
+}
+
+/* DEVOTIONAL */
+#devotional {
+  background: var(--bg-alt);
+}
+
+#devotional .card {
+  background: var(--main-bg);
+
+  margin-block: 4rem;
+  padding: 1rem;
+
+  border: 1px solid var(--headline);
+}
+
+#devotional img {
+  margin: 0;
+}
+
+#devotional a {
+  width: 15rem;
+  justify-content: center;
+
+  font-weight: 600;
+  color: var(--headline);
+  background: var(--highlight);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
 }
 
 /* FOOTER */
