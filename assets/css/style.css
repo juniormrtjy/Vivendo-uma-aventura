@@ -190,3 +190,11 @@ nav {
 footer {
   padding-block: 2rem;
 }
+.swiper {
+  max-width: 300px;
+  height: fit-content;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
