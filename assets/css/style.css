@@ -12,15 +12,14 @@
 
 *::-webkit-scrollbar-track {
   background-image: linear-gradient(135deg, #8bc5ec00 0%, #5396e300 100%);
-  backdrop-filter: blur( 1.5px );
-  -webkit-backdrop-filter: blur( 1.5px );
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #0077ff;
   border-radius: 30px;
 }
-
 
 :root {
   font-size: 62.5%;
@@ -80,6 +79,11 @@ a {
   display: inline-flex;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 .section {
   /* margin-block-end: 3rem; */
   padding-block: 6rem;
@@ -123,22 +127,33 @@ nav {
   width: 100px;
 }
 
+.menu-toggle {
+  top: -1000px !important;
+}
+
 .menu {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
-  position:fixed;
-  right: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #ffffff6c;
-  backdrop-filter: blur( 1.5px );
-  -webkit-backdrop-filter: blur( 1.5px );
+  width: 100%;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(1.5px);
   border-radius: 20px;
-  padding: 5px;
+  padding: 30px;
   z-index: 999;
+  transition: top 0.3s;
 }
+
 .menu li {
   height: 30px;
-
 }
+
 .menu li a {
   color: #00214d;
   font-weight: bold;
@@ -147,6 +162,10 @@ nav {
 }
 .menu li a:hover {
   border-bottom: 4px solid #00ebc7;
+}
+
+.btn-menu {
+  font-size: 24px;
 }
 
 /* INTRO */
@@ -207,7 +226,6 @@ nav {
   margin-top: 1rem;
   border-radius: 0.5rem;
 }
-
 
 /* FOOTER */
 footer {

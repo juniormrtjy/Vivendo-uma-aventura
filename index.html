@@ -32,7 +32,12 @@
           <a href="#"><img src="assets/img/logo.png" alt="" /></a>
         </div>
 
-        <ul class="menu">
+        <button class="open-menu btn-menu" onclick="toggleMenu()">
+          <i class="ph-fill ph-list"></i>
+        </button>
+
+        <ul id="menu" class="menu menu-toggle">
+          <li><button class="btn-menu" onclick="toggleMenu()">X</button></li>
           <li><a href="#logo">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#intro">Programação</a></li>
@@ -280,19 +285,9 @@
         Vivendo uma aventura - <strong>Primeira Igreja Batista em Éden</strong>
       </p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.mySwiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        spaceBetween: 100,
 
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination'
-        }
-      })
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </body>
 </html>
