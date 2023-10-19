@@ -133,6 +133,7 @@ nav {
   -webkit-backdrop-filter: blur( 1.5px );
   border-radius: 20px;
   padding: 5px;
+  z-index: 999;
 }
 .menu li {
   height: 30px;
